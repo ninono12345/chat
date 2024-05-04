@@ -1,18 +1,18 @@
-To run client side unittest first start server on localhost with port 8000\n
-python server.py localhost 8000\n
-then run python test_client.py\n\n\n
-Instructions:
+To run client side unittest first start server on localhost with port 8000<br>
+python server.py localhost 8000<br>
+then run python test_client.py<br><br><br>
+Instructions:<br><br>
 
-launch server.py and then connect to it as many clients as you like:\n
-\n
-python server.py <listener_ip> <listener_port>\n
-python client.py <server_ip> <server_port>\n\n
+launch server.py and then connect to it as many clients as you like:<br><br>
 
-example:\n
+python server.py <listener_ip> <listener_port><br>
+python client.py <server_ip> <server_port><br><br>
 
-python server.py localhost 8000\n
-python client.py localhost 8000\n
-\n\n\n
+example:<br><br>
+
+python server.py localhost 8000<br>
+python client.py localhost 8000<br>
+<br><br><br>
 
 
 Once connected select your username and groupname\n
