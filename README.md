@@ -1,38 +1,41 @@
+To run client side unittest first start server on localhost with port 8000\n
+python server.py localhost 8000\n
+then run python test_client.py\n\n\n
 Instructions:
 
-launch server.py and then connect to it as many clients as you like:
+launch server.py and then connect to it as many clients as you like:\n
+\n
+python server.py <listener_ip> <listener_port>\n
+python client.py <server_ip> <server_port>\n\n
 
-python server.py <listener_ip> <listener_port>
-python client.py <server_ip> <server_port>
+example:\n
 
-example:
-
-python server.py localhost 8000
-python client.py localhost 8000
+python server.py localhost 8000\n
+python client.py localhost 8000\n
+\n\n\n
 
 
+Once connected select your username and groupname\n
+If you are the first user to connect to the group, you become an admin\n
+If another user connects to the group, the admin has to approve the connection by typing /2 and username\n
+An admin can kick a user by /8 and username\n
+Once a user sends a message the entire group receives the same message\n
+If user isn't part of the group the message doesn't get sent out\n
+Users may disconnect by typing /3 or with Ctrl+C\n
+The server may only disconnect by typing stop!!! otherwise data will not be saved\n
+Group data admin, members, join requests message history are saved to group_data.json and reloaded once the server restarts, for each newly connected member the chat history gets printed\n
+\n
+/1 prints a list of usernames waiting for permission to join\n
+/2 approve connection\n
+/3 disconnect\n
+/4 prints a list of all members\n
+/5 prints a list of online members\n
+/8 kick user\n
 
-Once connected select your username and groupname
-If you are the first user to connect to the group, you become an admin
-If another user connects to the group, the admin has to approve the connection by typing /2 and username
-An admin can kick a user by /8 and username
-Once a user sends a message the entire group receives the same message
-If user isn't part of the group the message doesn't get sent out
-Users may disconnect by typing /3 or with Ctrl+C
-The server may only disconnect by typing stop!!! otherwise data will not be saved
-Group data admin, members, join requests message history are saved to group_data.json and reloaded once the server restarts, for each newly connected member the chat history gets printed
-
-/1 prints a list of usernames waiting for permission to join
-/2 approve connection
-/3 disconnect
-/4 prints a list of all members
-/5 prints a list of online members
-/8 kick user
-
-to clear all groups histories, type clear_all_data from the server side or delete the group_data.json file
+to clear all groups histories, type clear_all_data from the server side or delete the group_data.json file\n\n
 
 This app is made bug free, but to add new features, one has to be very carefull
-
+\n\n\n
 
 
 
